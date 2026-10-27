@@ -1,20 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>Sistem Bildirimi</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
   <style nonce="ETuy1C4B">
-    
+    :root {
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+    .body-bg {
+      background-color: #ffffff;
+    }
+    .email-card {
+      background-color: #ffffff;
+      border: none;
+      border-radius: 12px;
+    }
+    .text-heading {
+      color: #262626;
+    }
+    .text-muted {
+      color: #999999;
+    }
+    .divider-line {
+      border-top: 1px solid #DBDBDB;
+    }
+    .footer-text {
+      color: #abadae;
+    }
+    .footer-link {
+      color: rgb(151, 151, 151);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body, .body-bg {
+        background-color: #141416 !important;
+      }
+      .email-card {
+        background-color: #202125 !important;
+        border: 1px solid #2d2e33 !important;
+        border-radius: 12px !important;
+      }
+      .text-heading {
+        color: #ffffff !important;
+      }
+      .text-muted {
+        color: #999999 !important;
+      }
+      .divider-line {
+        border-top: 1px solid #38393d !important;
+      }
+      .footer-text {
+        color: #737373 !important;
+      }
+      .footer-link {
+        color: #8e9095 !important;
+      }
+    }
+
+    [data-ogsc] body, [data-ogsc] .body-bg {
+      background-color: #141416 !important;
+    }
+    [data-ogsc] .email-card {
+      background-color: #202125 !important;
+      border: 1px solid #2d2e33 !important;
+      border-radius: 12px !important;
+    }
+    [data-ogsc] .text-heading {
+      color: #ffffff !important;
+    }
+    [data-ogsc] .text-muted {
+      color: #999999 !important;
+    }
+    [data-ogsc] .divider-line {
+      border-top: 1px solid #38393d !important;
+    }
+    [data-ogsc] .footer-text {
+      color: #737373 !important;
+    }
+
     @media all and (max-width: 600px){
-      body, table, td, p, a, li, blockquote {
-        -webkit-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-      }
-      #email_table, #email_content {
-        width: 100% !important;
-        max-width: 100% !important;
-      }
       .container_430 {
         width: 100% !important;
         max-width: 430px !important;
@@ -31,77 +106,45 @@
         width: 100% !important;
         max-width: 100% !important;
       }
-      *[class].ib_t{min-width:100%!important}
-      *[class].ib_row{display:block!important}
-      *[class].ib_ext{display:block!important;padding:10px 0 5px;vertical-align:top!important;width:100%!important}
-      *[class].ib_img,*[class].ib_mid{vertical-align:top!important}
-      *[class].mb_blk{display:block!important;padding-bottom:10px;width:100%!important}
-      *[class].mb_hide{display:none!important}
-      *[class].mb_inl{display:inline!important}
-      *[class].d_mb_flex{display:block!important}
     }
-    .d_mb_show{display:none}
-    .d_mb_flex{display:flex}
-    @media only screen and (max-device-width: 600px){
-      .d_mb_hide{display:none!important}
-      .d_mb_show,.d_mb_flex{display:block!important}
-    }
-    .mb_text h1,.mb_text h2,.mb_text h3,.mb_text h4,.mb_text h5,.mb_text h6{line-height:normal}
-    .mb_work_text h1{font-size:18px;line-height:normal;margin-top:4px}
-    .mb_work_text h2,.mb_work_text h3{font-size:16px;line-height:normal;margin-top:4px}
-    .mb_work_text h4,.mb_work_text h5,.mb_work_text h6{font-size:14px;line-height:normal}
-    .mb_work_text a{color:#1270e9}
-    .mb_work_text p{margin-top:4px}
   </style>
 </head>
-<body style="margin:0;padding:0;" dir="ltr" bgcolor="#ffffff">
-  <table border="0" cellspacing="0" cellpadding="0" align="center" id="email_table" style="border-collapse:collapse;width:100%;max-width:600px;margin:0 auto;">
+<body style="margin:0;padding:0;background-color:#ffffff;" dir="ltr" class="body-bg">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center" id="email_table" class="body-bg" style="border-collapse:collapse;width:100%;margin:0 auto;background-color:#ffffff;padding:20px 10px;">
     <tr>
-      <td id="email_content" style="font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;background:#ffffff;">
-        <table border="0" width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+      <td align="center" style="padding:16px 8px;">
+        <!-- Card Container -->
+        <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center" class="email-card" style="border-collapse:collapse;width:100%;max-width:440px;background-color:#ffffff;border-radius:12px;overflow:hidden;margin:0 auto;">
+          <!-- Header Logo -->
           <tr>
-            <td height="20" style="line-height:20px;" >&nbsp;</td>
-          </tr>
-          <tr>
-            <td height="1"  style="line-height:1px;"></td>
-          </tr>
-          <tr>
-            <td>
-              <table border="0" width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse;text-align:center;width:100%;">
+            <td style="padding:24px 20px 10px 20px;text-align:left;">
+              <table border="0" width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
                 <tr>
-                  <td width="16px" style="width:16px;"></td>
-                  <td style="line-height:0px;max-width:600px;padding:0 0 15px 0;">
-                    <table border="0" width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
-                      <tr>
-                        <td style="width:100%;text-align:left;height:33px;">
-                          <a href="#" style="color:#1b74e4;text-decoration:none;">
-                            <img height="30" src="https://raw.githubusercontent.com/r5don/mail_taslak/main/img1260.png" style="border:0;" alt="Logo" />
-                          </a>
-                        </td>
-                      </tr>
-                    </table>
+                  <td style="width:100%;text-align:left;height:33px;">
+                    <a href="#" style="color:#1b74e4;text-decoration:none;">
+                      <img height="30" src="https://raw.githubusercontent.com/r5don/mail_taslak/main/img1260.png" style="border:0;" alt="Logo" />
+                    </a>
                   </td>
-                  <td width="16px" style="width:16px;"></td>
                 </tr>
               </table>
             </td>
           </tr>
           <!-- Ana İçerik Bloğu -->
           <tr>
-            <td>
+            <td align="center" style="padding:10px 16px 0 16px;">
               <table border="0" width="100%" cellspacing="0" cellpadding="0" class="container_430" style="border-collapse:collapse;margin:0 auto 0 auto;width:100%;max-width:430px;">
                 <tr>
                   <td>
                     <table border="0" width="300" cellspacing="0" cellpadding="0" align="center" class="text_300" style="border-collapse:collapse;margin:0 auto 0 auto;text-align:center;width:100%;max-width:300px;">
                       <tr><td height="16" style="line-height:16px;">&nbsp;</td></tr>
                       <tr>
-                        <td style="width:300px;padding:0;margin:0;text-align:center;color:#262626;font-size:18px;font-family:Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;">
+                        <td class="text-heading" style="width:300px;padding:0;margin:0;text-align:center;color:#262626;font-size:18px;font-family:Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;">
                           We noticed a new login, r2don
                         </td>
                       </tr>
                       <tr><td height="4" style="line-height:4px;">&nbsp;</td></tr>
                       <tr>
-                        <td style="width:300px;padding:0;margin:0;text-align:center;color:#999999;font-size:14px;font-family:Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;">
+                        <td class="text-muted" style="width:300px;padding:0;margin:0;text-align:center;color:#999999;font-size:14px;font-family:Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;">
                           We noticed a login from a device you don't usually use.
                         </td>
                       </tr>
@@ -128,13 +171,13 @@
                   <td>
                     <table border="0" width="300" cellspacing="0" cellpadding="0" align="center" class="text_300" style="border-collapse:collapse;margin:0 auto 0 auto;text-align:center;width:100%;max-width:300px;">
                       <tr>
-                        <td align="center" style="width:300px;padding:0;margin:0;text-align:center;color:#262626;font-size:16px;font-family:Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;">
+                        <td class="text-heading" align="center" style="width:300px;padding:0;margin:0;text-align:center;color:#262626;font-size:16px;font-family:Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;">
                           Apple lPhone · l​n​s​t​a​g​r​a​m​ · Baku, Azerbaijan
                         </td>
                       </tr>
                       <tr><td height="4" style="line-height:4px;">&nbsp;</td></tr>
                       <tr>
-                        <td align="center" style="width:300px;padding:0;margin:0;text-align:center;color:#999999;font-size:14px;font-family:Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;">
+                        <td class="text-muted" align="center" style="width:300px;padding:0;margin:0;text-align:center;color:#999999;font-size:14px;font-family:Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;">
                           October 22 at 11:15 PM (PDT)
                         </td>
                       </tr>
@@ -144,9 +187,9 @@
                 <!-- Ayırıcı Çizgi -->
                 <tr>
                   <td>
-                    <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center" class="divider_table" style="border-collapse:collapse;margin:0 auto 0 auto;text-align:center;width:100%;max-width:430px;">
+                    <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center" class="divider_table" style="border-collapse:collapse;margin:0 auto 0 auto;text-align:center;width:100%;max-width:400px;">
                       <tr><td height="16" style="line-height:16px;">&nbsp;</td></tr>
-                      <tr><td style="border-top:solid 1px #DBDBDB;"></td></tr>
+                      <tr><td class="divider-line" style="border-top:solid 1px #DBDBDB;"></td></tr>
                       <tr><td height="16" style="line-height:16px;">&nbsp;</td></tr>
                     </table>
                   </td>
@@ -157,7 +200,7 @@
                     <table border="0" width="300" cellspacing="0" cellpadding="0" align="center" class="text_300" style="border-collapse:collapse;margin:0 auto 0 auto;text-align:center;width:100%;max-width:300px;">
                       <tr><td height="24" style="line-height:24px;">&nbsp;</td></tr>
                       <tr>
-                        <td style="width:300px;padding:0;margin:0;text-align:center;color:#999999;font-size:14px;font-family:Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;">
+                        <td class="text-muted" style="width:300px;padding:0;margin:0;text-align:center;color:#999999;font-size:14px;font-family:Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;line-height:1.4;">
                           If this was you, you won't be able to access certain security and account settings for a few days. You can still access these settings from a device you've logged in with in the past.
                         </td>
                       </tr>
@@ -169,11 +212,11 @@
                     <table border="0" width="300" cellspacing="0" cellpadding="0" align="center" class="text_300" style="border-collapse:collapse;margin:0 auto 0 auto;text-align:center;width:100%;max-width:300px;">
                       <tr><td height="16" style="line-height:16px;">&nbsp;</td></tr>
                       <tr>
-                        <td style="width:300px;padding:0;margin:0;text-align:center;color:#999999;font-size:14px;font-family:Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;">
+                        <td class="text-muted" style="width:300px;padding:0;margin:0;text-align:center;color:#999999;font-size:14px;font-family:Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;line-height:1.4;">
                           If this wasn't you, you can <a href="#" style="color:#1b74e4;text-decoration:none;">secure your account</a> from a device you've logged in with in the past. <a href="#" style="color:#1b74e4;text-decoration:none;">Learn more</a>
                         </td>
                       </tr>
-                      <tr><td height="16" style="line-height:16px;">&nbsp;</td></tr>
+                      <tr><td height="24" style="line-height:24px;">&nbsp;</td></tr>
                     </table>
                   </td>
                 </tr>
@@ -182,12 +225,10 @@
           </tr>
           <!-- Footer -->
           <tr>
-            <td>
-              <table border="0" cellspacing="0" cellpadding="0" class="footer_table" style="border-collapse:collapse;margin:0 auto 0 auto;width:100%;max-width:600px;">
-                <tr><td height="4" style="line-height:4px;" >&nbsp;</td></tr>
+            <td align="center" style="padding:10px 16px 24px 16px;">
+              <table border="0" cellspacing="0" cellpadding="0" class="footer_table" style="border-collapse:collapse;margin:0 auto 0 auto;width:100%;max-width:400px;">
+                <tr><td height="4" style="line-height:4px;">&nbsp;</td></tr>
                 <tr>
-                  <td width="15px" style="width:15px;"></td>
-                  <td width="20" style="width:20px;">&nbsp;&nbsp;&nbsp;</td>
                   <td style="text-align:center;">
                     <div style="padding-top:10px;display:flex;">
                       <div style="margin:auto;">
@@ -195,21 +236,18 @@
                       </div><br />
                     </div>
                     <div style="height:10px;"></div>
-                    <div style="color:#abadae;font-size:11px;margin:0 auto 5px auto;">
+                    <div class="footer-text" style="color:#abadae;font-size:11px;margin:0 auto 5px auto;line-height:1.3;">
                       © l​n​s​t​a​g​r​a​m. М​e​t​a​ Platforms, Inc., 1601 Willow Road, M​a​s​l​o Park, CA 95034<br />
                     </div>
-                    <div style="color:#abadae;font-size:11px;margin:0 auto 5px auto;">
-                      This message was sent to <a style="color:rgb(151, 151, 151);text-decoration:underline;max-width:600px;">huseyne00@gmail.com</a> and intended for r2don. Not your profile? <a href="#" style="color:rgb(151, 151, 151);text-decoration:underline;max-width:600px;">Remove your email</a> from this account.<br />
+                    <div class="footer-text" style="color:#abadae;font-size:11px;margin:0 auto 5px auto;line-height:1.3;">
+                      This message was sent to <a class="footer-link" style="color:rgb(151, 151, 151);text-decoration:underline;">huseyne00@gmail.com</a> and intended for r2don. Not your profile? <a href="#" class="footer-link" style="color:rgb(151, 151, 151);text-decoration:underline;">Remove your email</a> from this account.<br />
                     </div>
                   </td>
-                  <td width="20" style="width:20px;">&nbsp;&nbsp;&nbsp;</td>
-                  <td width="15px" style="width:15px;"></td>
                 </tr>
-                <tr><td height="32" style="line-height:32px;" >&nbsp;</td></tr>
+                <tr><td height="16" style="line-height:16px;">&nbsp;</td></tr>
               </table>
             </td>
           </tr>
-          <tr><td height="20" style="line-height:20px;" >&nbsp;</td></tr>
         </table>
       </td>
     </tr>
